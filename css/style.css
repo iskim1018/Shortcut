@@ -1,0 +1,564 @@
+/*
+
+Sketchshortcuts V1.1
+A project by Robert van Klinken & Jeffrey de Groot
+
+*/
+
+
+/* Resets
+*********************************************************/
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Presets
+*********************************************************/
+
+body{
+  font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  vertical-align: baseline;
+  color: #4A4A4C;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.double{
+  line-height: 180%;
+}
+
+a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all .2s; 
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+h1{
+  font-size: 44px;
+  color: #000;
+  font-weight: 200;
+  margin-bottom: .3em;
+}
+
+h2{
+  font-size: 44px;
+  color: #888D92;
+  font-weight: normal;
+  max-width: 37.5em;
+  margin: 0 auto;
+}
+
+h3{
+  font-size: 1.1em;
+  border-bottom: 1px solid #BFBFBF;
+  padding: .5em 0;
+  margin-bottom: .5em;
+  color: #0E1113;
+}
+
+h4{
+  font-weight: normal;
+  float: left;
+  color: #1F2429;
+  font-size: 1em;
+}
+
+p{
+  float: right;
+  color: #666;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Layout
+*********************************************************/
+
+.topcolor {
+  height: 4px;
+  background: #38E1E9;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  max-width: 43.75em;
+  margin: 0 auto;
+}
+
+.wrapperbig{
+  overflow: hidden;
+  max-width: 63.75em;
+  margin: 0 auto;
+}
+
+/* Header
+*********************************************************/
+
+header{
+  border-bottom: 1px solid #DEE1E3;
+  text-align: center;
+  padding: 7em 0 6.2em 0;
+  margin-bottom: 4.375em;
+  width: 100%;
+}
+
+#logo{
+  display: block;
+  height: 4.06em;
+  width: 4.06em;
+  margin: 0 auto;
+  margin-bottom: 1.8em;
+}
+
+header .buttons{
+  margin-top: 1.55em;
+}
+
+footer .buttons{
+  margin: 0em 0 1em 0;
+}
+
+header .buttons a{
+  box-shadow: none;
+}
+
+header p{
+  max-width: 700px;
+  color: #888D92;
+  margin: 0 auto;
+  float: none;
+}
+
+/* List
+*********************************************************/
+
+ul{
+  max-width: 1000px;
+  width: 100%;
+}
+
+.items{
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.item{
+  border-bottom: 1px solid #ECECED;
+  display: inline-block;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  height: auto;
+  padding: 0 0 .5em 0;
+  overflow: hidden;
+}
+
+.new{
+  font-size: 10px !important;
+  text-transform: uppercase;
+  margin-left: 5px;
+  color: #F6B06F !important;
+  
+}
+
+/* Carbonad
+*********************************************************/
+
+#carbonads {
+  background: #FAFAFA;
+  padding: 20px;
+  position: absolute;
+  font-size: 11px;
+  float: right;
+  line-height: 16px;
+  right: 20px;
+  top: 24px;
+  text-align: left;
+  moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  max-width: 170px;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+.carbon-img {
+  height: 100px;
+  width: 130px;
+}
+.carbon-text {
+  margin-top: 6px;
+  margin-bottom: 3px;
+  color: #363636;
+  display: block; 
+  width: 130px; 
+}
+.carbon-poweredby {
+  color: #ACB2B7;
+}
+
+/* Create Custom Shortcuts
+*********************************************************/
+
+.custom{
+  width: 100%;
+  background: #000;
+  margin-top: 4em;
+  padding-top: 6em;
+  text-align: center;
+}
+
+
+#settings{
+  margin-bottom: .9375em;
+}
+
+.custom h2{
+  color: #FFFEFE;
+  letter-spacing: .02em;
+  margin-bottom: 0.4em;
+  font-weight: 200; 
+}
+
+.custom p{
+  max-width: 42em;
+  margin: 0 auto;
+  color: #999999;
+  float: none;
+  margin-bottom: 3em;
+}
+
+.wrapperbig img{
+  margin-bottom: -2px;
+}
+
+
+
+/* Tips
+*********************************************************/
+
+.tips{
+  background: #1A1A1A;
+  width: 100%;
+  padding: 4.125em 0;
+}
+
+.tips h3{
+  color: #D3D2D3;
+  border-bottom: 1px solid #4A4F56;
+}
+
+.items span{
+  font-size: .875em;
+  color: #5F6A72;
+  font-weight: normal;
+}
+
+.tips .item{
+  border-bottom: 1px solid #33363A;
+}
+
+.tips h4{
+  color: #A2A9AE;
+}
+
+.items span a{
+  color:#5F6A72;
+  font-size: 1em; 
+  font-weight: normal;
+}
+
+.items span.highlight {
+  font-weight: bold;
+  font-size: 1.2em; 
+  color: black;
+  background-color: yellow;
+}
+
+.tips p{
+  color: #5F6A72;
+}
+
+.buttons{
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  margin-top: 3.9em;
+  position: relative;
+}
+
+.buttons a{
+  margin-right: 1em;
+}
+
+.buttons a:hover{
+ opacity: 0.8;
+}
+
+.buttons a:last-child{
+  margin-right: 0;
+}
+
+
+
+/* Footer
+*********************************************************/
+
+footer{
+  border-top: 1px solid #3F4146;
+  width: 100%;
+  background: #1A1A1A;
+  padding: 3.750em 0;
+  text-align: center;
+}
+
+footer p{
+  font-size: .875em;
+  float: none;
+  color: #6D6D6D;
+}
+
+footer span a{
+  color: #6D6D6D;
+}
+
+footer a{
+  color: #6D6D6D
+  font-weight: normal;
+}
+
+footer a:hover{
+  opacity: 0.6;
+}
+
+/* Responsiveshizzle
+*********************************************************/
+@media screen and (max-width: 1150px){
+  #carbonads {
+    position: inherit;
+    margin: 0 auto;
+    float: none;
+    margin-top: 50px;
+    max-width: 310px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .carbon-img { 
+    float: left;
+    margin-right: 20px;
+  }
+  .carbon-text { 
+    display: block;
+    float: left;
+    width: 150px;
+  }
+  .carbon-poweredby {
+    float: left;
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 800px){
+
+  .wrapper{
+    padding: 0 1.875em;
+  }
+
+  .wrapperbig{
+    padding: 0 30px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+  
+  .item, .items{
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+/* Landscape
+*********************************************************/
+
+@media screen and (max-width: 480px){
+
+  #carbonads {
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 25px;
+  }
+  .carbon-img { 
+    float: left;
+    margin-right: 20px;
+  }
+  .carbon-text { 
+    display: block;
+    float: left;
+    width: 120px;
+  }
+
+  body{
+    font-size: 80%;
+  }
+  header{
+    padding: 3em 0;
+    margin-bottom: 3em;
+  }
+
+  .tweet img, .share img{
+    padding: 2px 0 0 0;
+
+  }
+  .wrapper{
+    padding: 0 1.875em;
+  }
+
+  .wrapperbig{
+    padding: 0 20px;
+  }
+
+  h4{
+    max-width: 75%;
+  }
+
+  span{
+    display: block;
+  }
+
+  .new{
+    display:inline-block;
+    padding: 1px 3px !important;
+    line-height: normal;
+    margin-left: 8px;
+  }
+
+  footer span{
+    display: block;
+  }
+}
+
+/* Mobile
+*********************************************************/
+
+@media screen and (max-width: 320px){
+
+/* Presets
+*************************************/
+
+body{
+  font-size: 80%;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+h3{
+  padding: 1em 0 0.5em 0;
+}
+
+h4{
+  max-width: 75%;
+}
+
+.wrapper{
+  padding: 0 1.4em;
+}
+
+.wrapperbig{
+  padding: 0 20px;
+}
+
+.items {
+  margin-bottom: 0.5em;
+}
+
+/* Header
+*************************************/
+
+header{
+  padding: 3em 0;
+  margin-bottom: 2em;
+}
+
+header .buttons{
+  display: none;
+}
+header p {
+  line-height: 1.5em;
+}
+
+/* Creating Custom Shortcuts
+*************************************/
+
+.custom{
+  padding-top: 3.8em;
+}
+.custom p {
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.custom h2{
+  line-height: 150%;
+  font-size: 1.4em;
+}
+
+.tips{
+  padding: 2em 0;
+}
+
+.buttons{
+  margin: 2em 0 1em 0;
+}
+
+.tweet{
+  width: 6.6em;
+}
+
+.share{
+  width: 6.6em;
+}
+
+span{
+  display: block;
+}
+
+/* Footer
+*************************************/
+
+footer span{
+  display: block;
+  line-height: 1.5em;
+}
+
+footer{
+  padding: 2em 0;
+}

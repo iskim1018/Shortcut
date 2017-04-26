@@ -1,0 +1,33 @@
+h4.hint {
+  display: block;
+  font-weight: bold;
+}
+
+#navbar > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#navbar > ul > li > a {
+  float: left;
+  padding: 10px 15px;
+  color: #666;
+}
+
+#navbar > ul > li > a:hover {
+  text-decoration: none;
+}
+
+#navbar > ul > li:not(.active) > a:hover {
+  background-color: #666;
+  color: white;
+}
+
+#navbar > ul > li > a:visited {
+  
+}
+
+#navbar > ul > li.active > a {
+  font-weight: bold;
+  color: black;
+}
